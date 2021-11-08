@@ -84,8 +84,6 @@ Location <- page %>%
 
 people_profile <- data.frame(Name, company,Location, stringsAsFactors = FALSE)
 
-write.csv(people_profile, "people Profile")
-
 
 #Scraping multiple pages using a For Loop 
 
@@ -107,4 +105,5 @@ for (page_result in seq(from = 1, to = 7, by = 1)) {
   people_profile <- data.frame(Name,company,Location, stringsAsFactors = FALSE)
 }
 
+write.csv(people_profile, "people Profile.csv")
 
