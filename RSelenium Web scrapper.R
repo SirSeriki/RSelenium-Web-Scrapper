@@ -1,6 +1,3 @@
-setwd("C:/Users/Work Station/Desktop/RevOps Project/code")
-
-
 #install Packages 
 install.packages("RSelenium")
 install.packages('Rcpp') # R and C++ integration (It solved the issue with RsDriver not running)
