@@ -102,5 +102,6 @@ for (page_result in seq(from = 1, to = 7, by = 1)) {
   people_profile <- data.frame(Name,company,Location, stringsAsFactors = FALSE)
 }
 
+# Writing the data frame to a CSV file 
 write.csv(people_profile, "people Profile.csv")
 
