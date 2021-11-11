@@ -85,7 +85,7 @@ people_profile <- data.frame(Name, company,Location, stringsAsFactors = FALSE)
 #Scraping multiple pages using a For Loop 
 
 
-people_profile <- rbind(people_profile, data.frame(Name,Company,Location, stringsAsFactors = FALSE))
+people_profile <- rbind(people_profile, data.frame(Name,Company,Location, stringsAsFactors = FALSE)) # Adding resulting data from automation in for loop to an empty data frame
 for (page_result in seq(from = 1, to = 7, by = 1)) {
   link <- paste0("https://www.linkedin.com/search/results/people/?geoUrn=%5B%22103121230%22%5D&keywords=%22%20Chief%20Revenue%20Officer%22", page_result,"&sid=QZ-") #adding a paste0() function deletes  all spaces by default
   page <- read_html(link)
